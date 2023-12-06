@@ -37,6 +37,15 @@ async function checkWeather(cityName){
     else if(data.weather[0].main == "Mist"){
         weatherIcon.src = "./images/mist.png";
     }
+    else if(data.weather[0].main == "Haze" || data.weather[0].main == "Fog"){
+        weatherIcon.src = "./images/haze.png";
+    }
+    else if(data.weather[0].main == "Thunderstorm" || data.weather[0].main == "Tornado"){
+        weatherIcon.src = "./images/thunderstorm.png";
+    }
+    else if(data.weather[0].main == "Snow"){
+        weatherIcon.src = "./images/snow.png";
+    }
 
     document.querySelector(".weather").computedStyleMap.display = "block";
     }
