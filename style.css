@@ -87,7 +87,9 @@
   display: none;
   color: red;
 }
-
+.Weather_icon{
+  height:35vh;
+}
 .weather{
     display: flex;
     align-items: center;
@@ -145,8 +147,9 @@
     text-align: center;
     font-size: 70px;
   }
-  .weather img{
-    height: 120px;
+  .Weather_icon{
+    height:20vh;
+    margin-top: 10px;
   }
   .weather{
     display: flex;
